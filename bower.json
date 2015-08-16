@@ -3,7 +3,10 @@
   "private": true,
   "dependencies": {
     "marionette": "~2.4.2",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "normalize.css": "~3.0.3",
+    "backbone.localstorage": "~1.1.16",
+    "admin-lte": "~2.2.1"
   },
   "devDependencies": {}
 }

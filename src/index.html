@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<title>MarionetteJS Simple Application</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- BEGIN Import block -->
+			<!-- Import CSS libraries -->
+				<link rel="stylesheet" href="css/app.css">
+			<!-- /Import CSS libraries -->
+		<!-- END Import block -->
+	</head>
+
+	<body ontouchstart="">
+		<div class="container">
+			<!-- BEGIN Init Main block -->
+				<div id="form"></div>
+				<!-- /#form -->
+				<div id="list"></div>
+				<!-- /#list -->
+			<!-- END Init Main block -->
+
+
+
+
+			<script id="formView" type="text/x-handlebars-template">
+				<div class="form_view form_view__grey">
+					<h2>Add New User</h2>
+					<div class="form_view__area">
+						<p>
+							Name:   <input id="name" class="form_view__area_input" type="text" />
+						</p>
+						<p>
+							Age:    <input id="age" class="form_view__area_input" type="text" />
+						</p>
+					</div>
+					<!-- /.form_view__area -->
+
+					<div class="form_view__area">
+						<button id="createUser"             class="btn btn-success form_view__button">
+							Create New User
+						</button>
+						<button id="clearAllLocalStorage"      class="btn btn-danger form_view__button form_view__button_clear">
+							Clear ALL localStorage
+						</button>
+					</div>
+					<!-- /.form_view__area -->
+				</div>
+				<!-- /.form_view.form_view__grey -->
+			</script>
+			<!-- /#userView -->
+
+
+		    <script id="userView" type="text/x-handlebars-template">
+			    <div class="user_view user_view__grey">
+				    <p>
+					    <strong>Name:</strong> <%= name %>
+				    </p>
+				    <p>
+					    <strong>Age:</strong> <%= age %>
+				    </p>
+			    </div>
+			    <!-- /.user_view.user_view__grey -->
+		    </script>
+			<!-- /#userView -->
+
+
+			<script id="usersView" type="text/x-handlebars-template">
+				<div class="user_view user_view__grey">
+					<h2>
+							Users
+					</h2>
+				</div>
+				<!-- /.user_view.user_view__grey -->
+			</script>
+			<!-- /#usersView -->
+
+			<script id="noUsersView" type="text/x-handlebars-template">
+				<div class="user_view user_view__grey">
+					<h2>
+						No Users
+					</h2>
+				</div>
+				<!-- /.user_view.user_view__grey -->
+			</script>
+			<!-- /#noUsersView -->
+		</div>
+		<!-- /.container -->
+
+
+
+
+
+
+
+		<!-- BEGIN Import block -->
+			<!-- Init Project -->
+				<script src="js/app.js" defer></script>
+			<!-- /Init Project-->
+		<!-- END Import block -->
+	</body>
+</html>
