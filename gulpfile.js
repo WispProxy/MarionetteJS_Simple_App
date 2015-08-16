@@ -8,12 +8,12 @@ var path = {
 	},
 	src: {
 		html: [
-				'src/**/*.html'
-			],
+			'src/**/*.html'
+		],
 		style: 'src/css/app.less',
 		js: [
-				'src/js/app.js'
-			]
+			'src/js/app.js'
+		]
 	},
 	watch: {
 		html: 'src/**/*.html',
